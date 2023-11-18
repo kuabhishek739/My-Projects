@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from "react-router-dom";
-import Home from "../pages/home.jsx";
+import Home from "../pages/Home.jsx";
 import HowItWorks from "../pages/HowItWorks.jsx";
 import Pricing from "../pages/Pricing.jsx";
 
