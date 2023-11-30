@@ -1,2 +1,2 @@
 # myhours
-myhours website clone
+This is my Projects repo
