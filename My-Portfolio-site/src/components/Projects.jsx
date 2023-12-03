@@ -5,8 +5,11 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import myhrs from '../assets/myhrs.png';
 import superheroresume from '../assets/superheroresume.png';
+import { useColorMode } from '@chakra-ui/color-mode'
 
 const Projects = () => {
+  const { colorMode } = useColorMode();
+  const bgColor = colorMode === 'dark' ? "#2c2c2c" : "#cecece";
   const settings = {
     dots: true,
     infinite: true,
@@ -24,6 +27,7 @@ const Projects = () => {
         textAlign='center'
         pt={100}
         pb={100}
+        bgColor={bgColor}
       >
         <Text
           fontSize={{ base: "2xl", md: "4xl", lg: "5xl" }}
@@ -45,10 +49,10 @@ const Projects = () => {
               <Image src={myhrs} alt='MyHours' />
               <Text fontWeight={"bold"} fontSize={"2xl"}>MyHours</Text>
               <Flex justify={"center"}>
-                <Link href='https://myhours-abhishekkukreti9-gmailcom-abhisheks-projects-212dc6e2.vercel.app/'>
+                <Link href='https://myhours-swart.vercel.app/'>
                   <Button mt={8} mb={8} mr={8} bg={"#7B66FF"}>Visit Site</Button>
                 </Link>
-                <Link href='https://myhours-abhishekkukreti9-gmailcom-abhisheks-projects-212dc6e2.vercel.app/'>
+                <Link href='https://github.com/kuabhishek739/My-Projects/tree/main/myhours'>
                   <Button mt={8} mb={8} bg={"#7B66FF"}>Visit Code</Button>
                 </Link>
               </Flex>
@@ -70,7 +74,7 @@ const Projects = () => {
                   <Button mt={8} mb={8} mr={8} bg={"#7B66FF"}>Visit Site</Button>
                 </Link>
 
-                <Link href='https://glittering-brigadeiros-18cbcc.netlify.app/'>
+                <Link href='https://github.com/kuabhishek739/My-Projects/tree/main/Super%20Hero%20Resume'>
                   <Button mt={8} mb={8} bg={"#7B66FF"}>Visit Code</Button>
                 </Link>
               </Flex>

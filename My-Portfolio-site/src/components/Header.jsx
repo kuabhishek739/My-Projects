@@ -1,4 +1,4 @@
-import { Button, Flex, Link, IconButton, Stack, Box, Text, VStack, Image } from '@chakra-ui/react';
+import { Button, Link, IconButton, Stack, Box, Text, VStack } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/color-mode'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { AiOutlineMail, AiOutlinePhone } from 'react-icons/ai';
@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react'
 import darkbackground from '../assets/dark-background.png'
 import lightbackground from '../assets/light-background.png'
 import LordIconComponent from './LordIconComponent';
-import myImg from '../assets/Image1.png';
+
 
 function Header() {
 
@@ -102,7 +102,7 @@ function Header() {
                                 _hover={{ transform: "scale(1.1)" }}
                             />
                         </Link>
-                        <Link href="tel:+911234567890">
+                        <Link href="tel:+919311837437">
                             <IconButton
                                 as={AiOutlinePhone}
                                 aria-label="Phone"

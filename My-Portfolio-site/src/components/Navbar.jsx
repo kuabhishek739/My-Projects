@@ -11,7 +11,6 @@ import {
     Text,
     Collapse,
     useColorMode,
-    Button,
 } from '@chakra-ui/react';
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import { HamburgerIcon, CloseIcon, SunIcon, MoonIcon } from '@chakra-ui/icons';
@@ -30,8 +29,9 @@ const NavLink = ({ to, children, onClick }) => (
             borderBottom: '2px',
             borderColor: 'white',
         }}
-        onClick={onClick}
         cursor="pointer"
+        onClick={onClick}
+
     >
         {children}
     </Text>
@@ -46,7 +46,7 @@ const Navbar = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     return (
         <Flex bg="#7B66FF" p={4} align="center" position="sticky" top={0} zIndex="sticky">
-            <Image src={myImg} w={{ base: "10%", lg: "4%" }} h={"4%"} borderRadius={"full"} mr={4}></Image>
+            <Image _hover={{ transform: "scale(1.1)" }} src={myImg} w={{ base: "10%", lg: "4%" }} h={"4%"} borderRadius={"full"} mr={4}></Image>
             <Text fontSize="xl" fontWeight="bold" mr={4} _hover={{ transform: "scale(1.1)" }}>
                 ABHISHEK
             </Text>
@@ -63,21 +63,69 @@ const Navbar = () => {
                 <Collapse in={isOpen} animateOpacity>
                     <VStack spacing={4} align="stretch" mt={{ base: 4, md: 0 }} fontWeight={'bold'}>
                         <AnchorLink href="#header">
-                            <Button>HOME</Button>
+                            <Text p={2}
+                                fontWeight={"bold"}
+                                color="96EFFF"
+                                _hover={{
+                                    textDecoration: 'none',
+                                    borderBottom: '2px',
+                                    borderColor: 'white',
+                                }}
+                                cursor="pointer">HOME</Text>
                         </AnchorLink>
                         <AnchorLink href="#about">
-                            <Button>ABOUT</Button>
+                            <Text p={2}
+                                fontWeight={"bold"}
+                                color="96EFFF"
+                                _hover={{
+                                    textDecoration: 'none',
+                                    borderBottom: '2px',
+                                    borderColor: 'white',
+                                }}
+                                cursor="pointer">ABOUT</Text>
                         </AnchorLink>
                         <AnchorLink href="#skills">
-                            <Button>SKILLS</Button>
+                            <Text p={2}
+                                fontWeight={"bold"}
+                                color="96EFFF"
+                                _hover={{
+                                    textDecoration: 'none',
+                                    borderBottom: '2px',
+                                    borderColor: 'white',
+                                }}
+                                cursor="pointer">SKILLS</Text>
                         </AnchorLink>
                         <AnchorLink href="#projects">
-                            <Button>PROJECTS</Button>
+                            <Text p={2}
+                                fontWeight={"bold"}
+                                color="96EFFF"
+                                _hover={{
+                                    textDecoration: 'none',
+                                    borderBottom: '2px',
+                                    borderColor: 'white',
+                                }}
+                                cursor="pointer">PROJECTS</Text>
                         </AnchorLink>
                         <AnchorLink href="#contact">
-                            <Button>CONTACT</Button>
+                            <Text p={2}
+                                fontWeight={"bold"}
+                                color="96EFFF"
+                                _hover={{
+                                    textDecoration: 'none',
+                                    borderBottom: '2px',
+                                    borderColor: 'white',
+                                }}
+                                cursor="pointer">CONTACT</Text>
                         </AnchorLink>
-                        <Button onClick={handleResumeDownload}>RESUME</Button>
+                        <Text onClick={handleResumeDownload} p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">RESUME</Text>
                     </VStack>
                 </Collapse>
             </Box>
@@ -85,21 +133,69 @@ const Navbar = () => {
             <Box display={{ base: 'none', md: 'block' }}>
                 <HStack spacing={4} align="stretch" fontWeight={'bold'}>
                     <AnchorLink href="#header">
-                        <Button>HOME</Button>
+                        <Text p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">HOME</Text>
                     </AnchorLink>
                     <AnchorLink href="#about">
-                        <Button>ABOUT</Button>
+                        <Text p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">ABOUT</Text>
                     </AnchorLink>
                     <AnchorLink href="#skills">
-                        <Button>SKILLS</Button>
+                        <Text p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">SKILLS</Text>
                     </AnchorLink>
                     <AnchorLink href="#projects">
-                        <Button>PROJECTS</Button>
+                        <Text p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">PROJECTS</Text>
                     </AnchorLink>
                     <AnchorLink href="#contact">
-                        <Button>CONTACT</Button>
+                        <Text p={2}
+                            fontWeight={"bold"}
+                            color="96EFFF"
+                            _hover={{
+                                textDecoration: 'none',
+                                borderBottom: '2px',
+                                borderColor: 'white',
+                            }}
+                            cursor="pointer">CONTACT</Text>
                     </AnchorLink>
-                    <Button onClick={handleResumeDownload}>RESUME</Button>
+                    <Text onClick={handleResumeDownload} p={2}
+                        fontWeight={"bold"}
+                        color="96EFFF"
+                        _hover={{
+                            textDecoration: 'none',
+                            borderBottom: '2px',
+                            borderColor: 'white',
+                        }}
+                        cursor="pointer">RESUME</Text>
                 </HStack>
             </Box>
             <IconButton

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Flex, Link, IconButton, Stack, Box, Text, VStack } from '@chakra-ui/react';
+import { Button, Box, Text } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/color-mode'
 
 const About = () => {
@@ -37,11 +37,11 @@ const About = () => {
                     >Get to know me!</Text>
                     <br />
                     <Text
-                    fontSize={{ sm: "l", md: "l", lg: "xl" }}
+                        fontSize={{ sm: "l", md: "l", lg: "xl" }}
                     >I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the Projects section.</Text>
                     <br />
                     <Text
-                    fontSize={{ sm: "l", md: "l", lg: "xl" }}
+                        fontSize={{ sm: "l", md: "l", lg: "xl" }}
                     >I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to contact me.</Text>
                     <Button
                         mt={8} bg={"#7B66FF"}

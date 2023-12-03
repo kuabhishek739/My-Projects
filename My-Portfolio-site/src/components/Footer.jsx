@@ -1,14 +1,8 @@
 import { ReactNode } from 'react';
 import {
     Box,
-    Container,
-    SimpleGrid,
-    Stack,
     Text,
-    Image,
     Link,
-    textDecoration,
-    Flex,
     IconButton,
     Spacer,
     HStack

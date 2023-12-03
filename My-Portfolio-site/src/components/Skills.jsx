@@ -1,14 +1,14 @@
 import React from 'react'
 import { FaHtml5, FaCss3Alt, FaJs, FaGit, FaPython, FaReact } from 'react-icons/fa';
-import { Tooltip } from '@chakra-ui/react';
-import { Button, Flex, Link, IconButton, Stack, Box, Text, VStack } from '@chakra-ui/react';
+import { Flex, Box, Text, VStack } from '@chakra-ui/react';
 import { useColorMode } from '@chakra-ui/color-mode'
 const Skills = () => {
     const { colorMode } = useColorMode();
-    const bgColor = colorMode === 'dark' ? "#717171" : "#ffffff";
+    const bgColor = colorMode === 'dark' ? "#3d3d3d" : "#ffffff";
     return (
         <section id='skills'>
-            <Box bgColor={bgColor}
+            <Box
+                bgColor={bgColor}
                 textAlign={"center"}
                 pt={100}
                 pb={100}>
@@ -29,7 +29,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
@@ -43,7 +43,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
@@ -57,7 +57,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
@@ -71,7 +71,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
@@ -85,7 +85,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
@@ -99,7 +99,7 @@ const Skills = () => {
                         textAlign="center"
                         my={3}
                         mx={2}
-                        border='2px' borderColor='gray.200'
+                        border='2px' borderColor='gray.400'
                         margin={"auto"}
                         display="flex"
                         flexDirection="column"
