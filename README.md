@@ -1,2 +1,0 @@
-# myhours
-myhours website clone
