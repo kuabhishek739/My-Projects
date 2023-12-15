@@ -23,10 +23,12 @@ export default function SignUp() {
             align={'center'}
             justify={'space-around'}
             bg={useColorModeValue('gray.50', 'gray.800')}
-            pt={35}>
+            pt={35}
+            flexDir={{ base: "column-reverse", md: "row" }}>
 
             <Box
-                maxW={"450px"}>
+                maxW={"450px"}
+                display={{ base: "none", md: "block" }}>
                 <h1 style={{ fontSize: "30px" }}>Automate your <span style={{ color: "#3b8fc2", fontWeight: "bold" }}>Timesheets</span></h1>
                 <p>"Ease of use and simplicity finally got our time tracking in order. We can now see if we are on time and on budget at any moment."</p>
                 <Flex

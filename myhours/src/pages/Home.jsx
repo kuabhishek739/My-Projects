@@ -60,12 +60,12 @@ export default function Home() {
                         p={4}
                         maxW={"100%"}
                         mt={30}>
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a9641b5393188913c5a9a_AUTOCAD%20logo%20grey%202.png' /><Spacer />
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e35e1214d17c2_kpmg_logo%201.png' /><Spacer />
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e352d5d4d17c6_logo_heading.png' /><Spacer />
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e355f174d17c3_typefox%201.png' /><Spacer />
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a95f2be797c08750dbb82_Mayo%20Clinic%20logo%20grey%201.png' /><Spacer />
-                        <Image src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a9583ca4db26da31bf727_parlor%20logo%20grey%201.png' />
+                        <Image width="10%" height="10%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a9641b5393188913c5a9a_AUTOCAD%20logo%20grey%202.png' /><Spacer />
+                        <Image width="10%" height="10%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e35e1214d17c2_kpmg_logo%201.png' /><Spacer />
+                        <Image width="10%" height="10%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e352d5d4d17c6_logo_heading.png' /><Spacer />
+                        <Image width="10%" height="10%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/64148069036e355f174d17c3_typefox%201.png' /><Spacer />
+                        <Image width="5%" height="5%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a95f2be797c08750dbb82_Mayo%20Clinic%20logo%20grey%201.png' /><Spacer />
+                        <Image width="5%" height="5%" src='https://assets-global.website-files.com/64148069036e35d5954d1323/642a9583ca4db26da31bf727_parlor%20logo%20grey%201.png' />
                     </Flex>
                 </Box>
             </Box>
@@ -87,9 +87,10 @@ export default function Home() {
                 <Flex
                     maxW={'90%'}
                     mt={"100px"}
+                    flexDirection={{ base: 'column-reverse', md: 'row' }}
                 >
                     <Image
-                        maxW={"60%"}
+                        maxW={{ base: "90%", md: "60%" }}
                         maxH={"500px"}
                         src='https://assets-global.website-files.com/64148069036e35d5954d1323/642fcd101df41e461270c3b3_2023-4-7_MyHours-homepage-Most-intuitive-timesheet%201-p-800.png' /> <Spacer />
                     <Box
@@ -107,6 +108,7 @@ export default function Home() {
                 <Flex
                     maxW={'90%'}
                     mt={"120px"}
+                    flexDirection={{ base: 'column', md: 'row' }}
                 >
                     <Box
                         maxW={"100%"}
@@ -119,7 +121,7 @@ export default function Home() {
                         <p>Create and send professional-looking reports with custom billing or payroll rates. Customize and export with all details or integrate with other apps.</p>
                     </Box>
                     <Image
-                        maxW={"60%"}
+                        maxW={{ base: "90%", md: "60%" }}
                         maxH={"500px"}
                         src='https://assets-global.website-files.com/64148069036e35d5954d1323/642c207eb6a844207e320d3e_2023-4-4_MyHours-homepage_Analyze-time%26costs%201-p-800.png' /> <Spacer />
 
@@ -129,9 +131,10 @@ export default function Home() {
                 <Flex
                     maxW={'90%'}
                     mt={"120px"}
+                    flexDirection={{ base: 'column-reverse', md: 'row' }}
                 >
                     <Image
-                        maxW={"60%"}
+                        maxW={{ base: "90%", md: "60%" }}
                         maxH={"500px"}
                         src='https://assets-global.website-files.com/64148069036e35d5954d1323/642c20acc2550b7b06e0169f_2023-4-4_MyHours-homepage_Organize-your-projects%201-p-800.png' /> <Spacer />
 
@@ -149,8 +152,9 @@ export default function Home() {
                 </Flex>
 
                 <Flex
-                    maxW={'90%'}
+                    maxW={{ base: "90%", md: "60%" }}
                     mt={"120px"}
+                    flexDirection={{ base: 'column', md: 'row' }}
                 >
                     <Box
                         maxW={"100%"}
@@ -163,7 +167,7 @@ export default function Home() {
                         <p>Invite your team to manage or fill out timesheets. Define precise roles and approval workflows. See who’s got too much or not enough on their plate.</p>
                     </Box>
                     <Image
-                        maxW={"60%"}
+                        maxW={{ base: "90%", md: "60%" }}
                         maxH={"500px"}
                         src='https://assets-global.website-files.com/64148069036e35d5954d1323/642c20f5f0aed97b8d862f94_2023-4-4_MyHours-homepage_Manage-your-team%201-p-800.png' /> <Spacer />
 
@@ -334,6 +338,7 @@ export default function Home() {
                 alignItems="center"
                 pb={50}
                 justifyContent={"center"}
+                flexDirection={{ base: "column", md: "row" }}
             >
                 <Box
                     maxW={"40%"}
