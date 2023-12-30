@@ -82,12 +82,13 @@ const Navbar = () => {
                         color={"white"}
                         borderRadius={"1.5rem"}
                         fontWeight={"bold"}
-                        height={"100%"}
+                        height={"70%"}
                         align={"center"}
-                        w={"80%"}
-                        fontSize={"0.8rem"}
+                        w={"60%"}
+                        fontSize={"0.7rem"}
                         position="absolute"
                         top="-1.5rem"
+                        fontFamily={"sans-serif"}
                         left="50%"
                         transform="translateX(-50%)"
                         _hover={{ cursor: 'pointer' }}
@@ -148,7 +149,8 @@ const Navbar = () => {
                     marginTop: 80,
                     left: 0,
                     backgroundColor: 'white',
-                    height: '400px',
+                    height: 'auto',
+                    width: '80%',
                     overflowY: 'auto',
                 }}>
                 <Box
