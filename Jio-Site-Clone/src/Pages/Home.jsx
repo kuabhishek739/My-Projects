@@ -61,7 +61,7 @@ const Home = () => {
                         height={'400px'}
                         bg={`url(${JioOTTBanner})`}
                         backgroundSize={{ base: 'cover', md: 'cover' }}
-                        backgroundPosition='-100% -50%'
+                        backgroundPosition='top center'
                         backgroundRepeat='no-repeat'
                         paddingTop={5}>
                         <Box
@@ -104,19 +104,15 @@ const Home = () => {
                             maxW={{ base: "100%", md: "42%" }}>
                             <Text
                                 color={'white'}
-                                fontSize={'6xl'}
-                                fontWeight={'bold'}>
-                                Introducing
+                                fontSize={{ base: '4xl', md: '6xl' }}
+                                fontWeight={'bold'}
+                                mt={8}
+                                maxW={{ base: "100%", md: "90%" }}>
+                                Introducing  JioFiber
                             </Text>
                             <Text
                                 color={'white'}
-                                fontSize={'6xl'}
-                                fontWeight={'bold'}>
-                                JioFiber
-                            </Text>
-                            <Text
-                                color={'white'}
-                                fontSize={'xl'}
+                                fontSize={'6l'}
                                 fontWeight={'bold'}>Experience the future of home entertainment with 15+ OTT
                                 apps and 550+ digital TV channels.</Text>
                             <br />
@@ -148,9 +144,11 @@ const Home = () => {
                             maxW={{ base: "100%", md: "42%" }}>
                             <Text
                                 color={'white'}
-                                fontSize={'6xl'}
+                                fontSize={{ base: '4xl', md: '6xl' }}
                                 fontWeight={'bold'}
-                                lineHeight={'1.2'}>
+                                lineHeight={'1.2'}
+                                mt={8}
+                                maxW={{ base: "100%", md: "90%" }}>
                                 It's time to
                                 embrace digital
                                 life
@@ -327,6 +325,7 @@ const Home = () => {
                         <Text color={"black"} fontSize={"0.9rem"} fontFamily={"sans-serif"}>Port to Jio</Text>
                     </Box>
                 </Flex>
+
                 <Box
                     bg={"white"}
                 >
@@ -347,24 +346,22 @@ const Home = () => {
                         margin={"auto"}
                         p={5}
                         gap={5}
-                        flexWrap={{ base: "wrap", md: "nowrap" }}
-                        height={{ base: "400px", md: "600px" }}>
+                        direction={{ base: "column", md: "row" }}
+                    >
                         <Box
-                            height={'100%'}
-                            w={"100%"}
                             borderRadius={"1.5rem"}
                             backgroundImage={`url(${True5GBanner})`}
                             backgroundSize='cover'
                             backgroundPosition='center'>
                             <Box
                                 p={5}
-                                h={"300px"}>
-                                <Image src={true5GIcon}></Image>
+                                h={"400px"}>
+                                <Image w={{ base: "50%", md: "auto" }} src={true5GIcon}></Image>
                                 <br />
                                 <Text
                                     color={'white'}
                                     fontWeight={"bold"}
-                                    fontSize={"5xl"}
+                                    fontSize={{ base: "3xl", md: "5xl" }}
                                     maxW={{ base: "100%", md: "60%" }}
                                     lineHeight={'1'}>Now in 7,764 locations in India</Text>
                                 <br />
@@ -377,22 +374,20 @@ const Home = () => {
                             </Box>
                         </Box>
                         <Box
-                            height={'100%'}
-                            w={"100%"}
                             borderRadius={"1.5rem"}
                             backgroundImage={`url(${AirFibreBanner})`}
                             backgroundSize='cover'
                             backgroundPosition='center'>
                             <Box
                                 p={5}
-                                h={"300px"}
+                                h={"400px"}
                             >
-                                <Image src={airFiberIcon}></Image>
+                                <Image w={{ base: "50%", md: "auto" }} src={airFiberIcon}></Image>
                                 <br />
                                 <Text
                                     color={'white'}
                                     fontWeight={"bold"}
-                                    fontSize={"5xl"}
+                                    fontSize={{ base: "3xl", md: "5xl" }}
                                     maxW={{ base: "100%", md: "60%" }}
                                     lineHeight={'1'}>Available across 514 towns in India</Text>
                                 <br />
@@ -419,7 +414,7 @@ const Home = () => {
                     >
                         <Text
                             color={"#141414"}
-                            fontSize={"4rem"}
+                            fontSize={{ base: "3xl", md: "4rem" }}
                             fontWeight={"bold"}
                             lineHeight={"1.1"}
                         >Enrich your digital life</Text>
@@ -434,10 +429,11 @@ const Home = () => {
                         justify={{ md: "space-between" }}
                         flexDir={{ base: "column", md: "row" }}>
                         <Box
-                            w={"40%"}>
+                            w={{base: "100%", md: "40%"}}>
                             <Box
-                                pt={20}
-                                pl={"8rem"}>
+                                pt={{md: 20}}
+                                pl={{md: "8rem"}}
+                                p={{ base: 5}}>
                                 <Image src={JioCinema}></Image>
                                 <br />
                                 <Text
