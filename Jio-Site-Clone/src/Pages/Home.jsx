@@ -4,17 +4,6 @@ import {
     Flex,
     Text,
     Image,
-    Link,
-    Avatar,
-    Spacer,
-    useDisclosure,
-    IconButton,
-    useBreakpointValue,
-    Slide,
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
     Button,
 
 }
@@ -38,6 +27,8 @@ import getjiofiber from '../assets/getjiofiber.svg'
 import porttojio from '../assets/porttojio.svg'
 import JioVideo from '../assets/JioCinema_DekhtaJaIndia_06062023.mp4'
 import JioCinema from '../assets/Jio-cinema-bold.svg'
+import AjioVideo from '../assets/house-of-ethnics-by-ajio.mp4'
+import ajiologo from '../assets/ajio-logo.svg'
 const Home = () => {
     const settings = {
         dots: true,
@@ -429,11 +420,11 @@ const Home = () => {
                         justify={{ md: "space-between" }}
                         flexDir={{ base: "column", md: "row" }}>
                         <Box
-                            w={{base: "100%", md: "40%"}}>
+                            w={{ base: "100%", md: "40%" }}>
                             <Box
-                                pt={{md: 20}}
-                                pl={{md: "8rem"}}
-                                p={{ base: 5}}>
+                                pt={{ md: 20 }}
+                                pl={{ md: "8rem" }}
+                                p={{ base: 5 }}>
                                 <Image src={JioCinema}></Image>
                                 <br />
                                 <Text
@@ -463,6 +454,35 @@ const Home = () => {
                             </video>
                         </Box>
                     </Flex>
+                </Box>
+
+                <Box
+                    bg={"white"}
+                    mt={10}
+                    display={"flex"}
+                    flexDirection={"column"}
+                    alignItems={"center"}
+
+                >
+                    <Image src={ajiologo}></Image>
+                    <br />
+                    <Text
+                        color={"#141414"}
+                        fontSize={{ base: "3xl", md: "2rem" }}
+                        fontWeight={"bold"}
+                        textAlign={"center"}
+                        lineHeight={"1.1"}>Celebrate in timeless ethnic styles</Text>
+                    <br />
+
+                    <Box
+                        w={{ base: "100%", md: "60%" }}
+                        p={{ base: 5, md: 0 }}
+
+                        h={"80%"}>
+                        <video autoPlay loop muted controls id='myVideo'>
+                            <source src={AjioVideo} type="video/mp4" />
+                        </video>
+                    </Box>
                 </Box>
             </Box>
         </>

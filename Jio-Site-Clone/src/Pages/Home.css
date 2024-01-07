@@ -2,43 +2,53 @@
 /* Display rectangles instead of dots for React Slick */
 
 .custom-slider .slick-dots {
-    display: flex !important;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .custom-slider .slick-dots li {
-    margin: 0 5px;
-    display: inline-block;
-  }
-  
-  .custom-slider .slick-dots li button {
-  
-    width: 10px; /* Width of the rectangle */
-    height: 10px; 
-    background-color: #e7ebf8; /* Color of the rectangles */
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-left: 5px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
-  
-  .custom-slider .slick-dots li.slick-active button {
-    background-color: #1f43ad; /* Color of the active rectangle */
-    width: 20px; /* Width of the rectangle */
-    border-radius: 5px;
-    height: 4px; /* Height of the rectangle */
-  }
-  
-  .custom-slider .slick-dots li button:hover {
-    background-color: #1f43ad;
-  }
-  .custom-slider .slick-dots li button:before {
-    display: none; /* Hide the dots */
-  }
-  
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.custom-slider .slick-dots li {
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.custom-slider .slick-dots li button {
+
+  width: 10px;
+  /* Width of the rectangle */
+  height: 10px;
+  background-color: #e7ebf8;
+  /* Color of the rectangles */
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-slider .slick-dots li.slick-active button {
+  background-color: #1f43ad;
+  /* Color of the active rectangle */
+  width: 20px;
+  /* Width of the rectangle */
+  border-radius: 5px;
+  height: 4px;
+  /* Height of the rectangle */
+}
+
+.custom-slider .slick-dots li button:hover {
+  background-color: #1f43ad;
+}
+
+.custom-slider .slick-dots li button:before {
+  display: none;
+  /* Hide the dots */
+}
+
+#myVideo {
+  border-radius: 5%;
+}
